@@ -1,0 +1,5 @@
+profile: function-aws
+defaultPackage: activity.function
+---
+testFramework: junit
+sourceLanguage: java
