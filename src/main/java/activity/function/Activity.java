@@ -19,6 +19,10 @@ public class Activity {
     private String activityTime;
     @DynamoDBAttribute
     private String location;
+    @DynamoDBAttribute
+    private String speaker;
+    @DynamoDBAttribute
+    private String additionalInfos;
 
     public int getActivityMonth() {
         return activityMonth;
@@ -66,5 +70,21 @@ public class Activity {
 
     public void setLocation(String location) {
         this.location = location;
+    }
+
+    public String getSpeaker() {
+        return speaker;
+    }
+
+    public void setSpeaker(String speaker) {
+        this.speaker = speaker;
+    }
+
+    public String getAdditionalInfos() {
+        return additionalInfos;
+    }
+
+    public void setAdditionalInfos(String additionalInfos) {
+        this.additionalInfos = additionalInfos;
     }
 }
